@@ -1,0 +1,11 @@
+# Virtual environments
+venv/
+linux/venv/
+windows/venv/
+
+# YOLO weights (large file)
+yolov3.weights
+
+# Python cache
+__pycache__/
+*.pyc

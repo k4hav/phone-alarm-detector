@@ -1,0 +1,220 @@
+PHONE ALARM DETECTOR
+HOW TO DOWNLOAD & RUN GUIDE
+===========================
+
+This project contains TWO versions:
+1) Windows
+2) Linux
+
+IMPORTANT:
+- First COMPLETE all download steps.
+- After that, use Command Prompt / Terminal.
+- Follow steps IN ORDER.
+- Windows guide is FIRST.
+
+--------------------------------------------------
+PROJECT STRUCTURE
+--------------------------------------------------
+
+phone-alarm-detector/
+│
+├── windows/
+│   ├── phone_alarm.py
+│   ├── coco.names
+│   ├── yolov3.cfg
+│   ├── yolov3.weights   (YOU WILL DOWNLOAD THIS)
+│   └── alarm.wav
+│
+├── linux/
+│   ├── phone_alarm.py
+│   ├── coco.names
+│   ├── yolov3.cfg
+│   ├── yolov3.weights   (YOU WILL DOWNLOAD THIS)
+│   └── alarm.wav
+│
+├── README.md
+└── INSTALL.txt
+
+NOTE:
+- yolov3.weights is NOT included.
+- venv/ folders are NOT included.
+
+==================================================
+WINDOWS GUIDE (DO THIS FIRST)
+==================================================
+
+-----------------------------
+PART 1: DOWNLOAD FILES
+-----------------------------
+
+STEP 1: Download project code
+- Open the GitHub repository
+- Click: Code → Download ZIP
+- Extract the ZIP file
+- Open the extracted folder
+
+You should see:
+YOUR Location/phone-alarm-detector
+
+--------------------------------
+
+STEP 2: Download YOLOv3 weights (REQUIRED)
+
+Download the file from:
+https://pjreddie.com/media/files/yolov3.weights
+
+File size ~240 MB
+Wait until download COMPLETES.
+
+--------------------------------
+
+STEP 3: Place the downloaded file
+
+After download finishes:
+- Copy: yolov3.weights
+- Paste it into: phone-alarm-detector folder
+
+Your Location/phone-alarm-detector
+
+--------------------------------
+
+STEP 4: Prepare alarm sound file (IMPORTANT)
+
+Pygame requires proper WAV format.
+
+EASIEST METHOD:
+1. Download your desire Audio 
+2. Convert into .wav format 
+3. Rename the file to alarm.wav
+4. Paste into Your Location/phone-alarm-detector
+--------------------------------
+
+STOP HERE.
+ALL REQUIRED FILES ARE NOW READY.
+
+--------------------------------
+PART 2: RUN THE PROJECT (WINDOWS)
+--------------------------------
+
+STEP 5: Install Python
+Download from:
+https://www.python.org/downloads/windows/
+
+IMPORTANT:
+✔ Check "Add Python to PATH" during install
+
+Verify:
+python --version
+
+--------------------------------
+
+STEP 6: Open Command Prompt in windows folder
+- Open phone-alarm-detector/windows
+- Click address bar
+- Type:
+  cmd
+- Press Enter
+- CMD will open and then 
+--------------------------------
+
+STEP 7: Create virtual environment (Run these command on cmd)
+
+python -m venv ven
+
+venv\Scripts\activate
+
+You should see (venv).
+
+--------------------------------
+
+STEP 8: Install dependencies
+
+pip install opencv-python numpy pygame
+
+--------------------------------
+
+STEP 9: Run the program
+
+python phone_alarm.py
+--------------------------------
+
+EXPECTED RESULT:
+- Webcam opens
+- Phone detected → FULL alarm plays
+- Alarm is NOT cut
+- Press 'q' to exit
+
+==================================================
+LINUX GUIDE
+==================================================
+
+-----------------------------
+PART 1: DOWNLOAD FILES
+-----------------------------
+
+STEP 1: Download YOLOv3 weights
+
+Download from:
+https://pjreddie.com/media/files/yolov3.weights
+
+After download:
+- Copy the file
+- Paste it into:
+
+phone-alarm-detector folder
+
+--------------------------------
+
+STEP 2: Confirm linux folder contents
+
+linux/
+├── phone_alarm.py
+├── coco.names
+├── yolov3.cfg
+├── yolov3.weights
+└── alarm.wav
+
+--------------------------------
+PART 2: RUN THE PROJECT (LINUX)
+--------------------------------
+
+STEP 3: Open terminal in linux folder
+cd linux
+
+--------------------------------
+
+STEP 4: Create virtual environment
+python -m venv venv
+source venv/bin/activate
+
+--------------------------------
+
+STEP 5: Install dependencies
+pip install opencv-python numpy
+
+--------------------------------
+
+STEP 6: Install audio tools
+sudo pacman -S pipewire-pulse pavucontrol
+
+--------------------------------
+
+STEP 7: Run the program (Wayland users)
+QT_QPA_PLATFORM=xcb python phone_alarm.py
+
+EXPECTED RESULT:
+- Webcam opens
+- Phone detected → FULL alarm plays
+- Press 'q' to exit
+
+==================================================
+IMPORTANT NOTES
+==================================================
+
+- yolov3.weights MUST be downloaded manually
+- Do NOT rename files incorrectly
+- Follow steps exactly as written
+
+==================================================
+AUTHOR : k4hav
+==================================================
