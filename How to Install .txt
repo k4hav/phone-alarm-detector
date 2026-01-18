@@ -72,9 +72,9 @@ STEP 3: Place the downloaded file
 
 After download finishes:
 - Copy: yolov3.weights
-- Paste it into: phone-alarm-detector folder
+- Paste it into: phone-alarm-detector folder/window
 
-Your Location/phone-alarm-detector
+Your Location/phone-alarm-detector/window
 
 --------------------------------
 
@@ -86,11 +86,20 @@ EASIEST METHOD:
 1. Download your desire Audio 
 2. Convert into .wav format 
 3. Rename the file to alarm.wav
-4. Paste into Your Location/phone-alarm-detector
+4. Paste into Your Location/phone-alarm-detector/window
 --------------------------------
 
 STOP HERE.
 ALL REQUIRED FILES ARE NOW READY.
+
+Confirm /window folder contents
+
+phone-alarm-detector/window
+├── phone_alarm.py
+├── coco.names
+├── yolov3.cfg
+├── yolov3.weights
+└── alarm.wav
 
 --------------------------------
 PART 2: RUN THE PROJECT (WINDOWS)
@@ -106,16 +115,16 @@ IMPORTANT:
 Verify:
 python --version
 
---------------------------------
+---------------------------------------------
 
 STEP 6: Open Command Prompt in windows folder
 - Open phone-alarm-detector/windows
 - Click address bar
-- Type:
-  cmd
+- Type:cmd
 - Press Enter
-- CMD will open and then 
---------------------------------
+- CMD will open and then
+
+----------------------------------------------
 
 STEP 7: Create virtual environment (Run these command on cmd)
 
@@ -123,15 +132,15 @@ python -m venv ven
 
 venv\Scripts\activate
 
-You should see (venv).
+/You should see (venv)/
 
---------------------------------
+-------------------------------------
 
 STEP 8: Install dependencies
 
 pip install opencv-python numpy pygame
 
---------------------------------
+--------------------------------------
 
 STEP 9: Run the program
 
@@ -161,9 +170,9 @@ After download:
 - Copy the file
 - Paste it into:
 
-phone-alarm-detector folder
+YOUR LOCATION/phone-alarm-detector/linux
 
---------------------------------
+-----------------------------------------
 
 STEP 2: Confirm linux folder contents
 
@@ -183,13 +192,16 @@ cd linux
 
 --------------------------------
 
-STEP 4: Create virtual environment
+STEP 4: Create virtual environment (Run this command in terminal)
+
 python -m venv venv
-source venv/bin/activate
+
+source venv/bin/activate.fish
 
 --------------------------------
 
 STEP 5: Install dependencies
+
 pip install opencv-python numpy
 
 --------------------------------
@@ -200,6 +212,7 @@ sudo pacman -S pipewire-pulse pavucontrol
 --------------------------------
 
 STEP 7: Run the program (Wayland users)
+
 QT_QPA_PLATFORM=xcb python phone_alarm.py
 
 EXPECTED RESULT:
