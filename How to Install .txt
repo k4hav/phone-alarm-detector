@@ -23,14 +23,14 @@ phone-alarm-detector/
 │   ├── coco.names
 │   ├── yolov3.cfg
 │   ├── yolov3.weights   (YOU WILL DOWNLOAD THIS)
-│   └── alarm.wav
+│   └── alarm.wav        (YOU WILL DOWNLOAD THIS)
 │
 ├── linux/
 │   ├── phone_alarm.py
 │   ├── coco.names
 │   ├── yolov3.cfg
 │   ├── yolov3.weights   (YOU WILL DOWNLOAD THIS)
-│   └── alarm.wav
+│   └── alarm.wav        (YOU WILL DOWNLOAD THIS)
 │
 ├── README.md
 └── INSTALL.txt
