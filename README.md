@@ -7,4 +7,4 @@ The project supports:
 - Linux
 - Windows
 
-For full setup and run, see How to Install.txt
+For Run this Program, open  How to Install.txt
