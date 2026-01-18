@@ -7,5 +7,6 @@ The project supports:
 - Linux
 - Windows
 
-For Run this Program, open  How to Install.txt
+For Installation of guide, open  
+  How to Install.txt
 
