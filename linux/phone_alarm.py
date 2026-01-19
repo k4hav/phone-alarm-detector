@@ -6,7 +6,7 @@ import time
 # ---------- CONFIG ----------
 
 AUDIO_DURATION = 16  # seconds (audio length)
-CONFIDENCE_THRESHOLD = 0.6
+CONFIDENCE_THRESHOLD = 0.00001
 COOLDOWN = 2            # seconds
 DETECT_EVERY_N_FRAMES = 1
 
